@@ -1,0 +1,17 @@
+.hero {
+  background: url("../images/hero/hero-bg.jpg") no-repeat center top 80px;
+  background-size: contain;
+  padding-top: 180px;
+  padding-bottom: 270px;
+  &__title {
+    margin-bottom: 30px;
+    font-size: 30px;
+
+  }
+  &__subtitle {
+    display: block;
+    margin-bottom: 67px;
+    font-size: 30px;
+    @include bold();
+  }
+}

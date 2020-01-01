@@ -1,0 +1,27 @@
+{
+  "name": "verstka_skinali",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artemmartov/verstka_skinali.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artemmartov/verstka_skinali/issues"
+  },
+  "homepage": "https://github.com/artemmartov/verstka_skinali#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1"
+  },
+  "keywords": []
+}
