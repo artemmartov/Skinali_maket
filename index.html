@@ -10,7 +10,7 @@
 </head>
 <body>
 <header class="header">
-    <div class="menu menu_active">
+    <div class="menu">
         <div class="container">
             <nav class="menu__nav">
                 <a href="#" class="menu__link">главная</a>
@@ -73,7 +73,14 @@
                     <div class="form__row">
                         <div class="form__group">
                             <label for="" class="form__label">Вид стекла</label>
-                            <input type="text" class="input form__input">
+                            <input type="hidden" name="type" id="select-type" value="С печатью">
+                            <div class="select form__select">
+                                <div class="select_checked">С печатью</div>
+                                <ul class="select__dropdown">
+                                    <li class="select-option" value="С печатью">С печатью</li>
+                                    <li class="select-option" value="Без печати">Без печати</li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="form__group">
                             <label for="" class="form__label">Ширина, см </label>
@@ -536,21 +543,94 @@
                     <img src="images/factory/factory.png" alt="">
                 </div>
                 <div class="factory-block__text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                    laudantium</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id
+                        est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque
+                        laudantium</p>
+                </div>
             </div>
+    </section>
+
+    <section class="section contacts">
+        <div class="container">
+            <h2 class="section-title section__title">Контакты</h2>
+            <div class="contacts-block">
+                <div class="contacts-block__item">
+                    <img src="images/contacts/contacts1.png" alt="" class="contacts__image">
+                    <div class="contacts__text">
+                        <a href="#" class="contacts__link">+7 499 123-45-67</a>
+                    </div>
+                </div>
+                <div class="contacts-block__item">
+                    <img src="images/contacts/contacts2.png" alt="" class="contacts__image">
+                    <div class="contacts__text">
+                        <address href="#" class="contacts__address">Каширинское шоссе, д. 23, офис 345</address>
+                    </div>
+                </div>
+                <div class="contacts-block__item">
+                    <img src="images/contacts/contacts3.png" alt="" class="contacts__image">
+                    <div class="contacts__text">
+                        <a href="#" class="contacts__link">5404177@mail.ru</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="map" id="map">
+        <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0086ebf831a6e3975b603dd45fa75a6710fe99bbb712723b33568b1ee629b4d0&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false"></script>
+    </div>
+
+    <section class="section questions">
+        <div class="container">
+            <div class="questions-block">
+                <h3 class="questions__title">Остались вопросы?</h3>
+                <a href="#" class="questions__link">Задайте их менеджеру</a></div>
         </div>
     </section>
 
 
 </main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-block">
+            <div class="footer__description">
+                <h4 class="footer__title">Фабрика скинали №1</h4>
+                <span class="footer__subtitle">ведущий производитель скинали</span>
+                <span class="footer__copy">© Фабрика скинали №1</span>
+            </div>
+            <div class="footer__pay-info">
+                <img src="images/footer/logo5.png" class="footer__pay-logo" alt="">
+                <img src="images/footer/logo2.png" class="footer__pay-logo" alt="">
+                <img src="images/footer/logo3.png" class="footer__pay-logo" alt="">
+                <img src="images/footer/logo4.png" class="footer__pay-logo" alt="">
+            </div>
+            <div class="footer__contacts">
+                <a href="#" class="footer__phone">+7 499 123-45-67</a>
+                <a href="#" class="footer__mail">5404177@mail.ru</a>
+                <div class="footer-social">
+                    <a href="#" class="footer-social__link">
+                        <img src="images/footer/twitter.png" alt="">
+                    </a>
+                    <a href="#" class="footer-social__link">
+                        <img src="images/footer/facebook.png" alt="">
+                    </a>
+                    <a href="#" class="footer-social__link">
+                        <img src="images/footer/vk.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script type="text/javascript" src="https://spikmi.com/Widget?Id=2358"></script>
 <script src="js/main.js"></script>

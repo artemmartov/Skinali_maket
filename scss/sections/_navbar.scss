@@ -13,10 +13,6 @@
     justify-content: space-between;
   }
 
-  &__menu-button {
-
-  }
-
   &__mobile, &__landline {
     text-align: right;
   }
@@ -41,7 +37,7 @@
 
 .menu {
   position: fixed;
-  z-index: 0;
+  z-index: 1;
   top: 80px;
   padding: 16px 0;
   width: 100%;
@@ -49,6 +45,16 @@
   background-color: $primary;
   color: white;
   transform: translateY(-200%);
+  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+
+  &_active {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    transform: translateY(0);
+    //opacity: 1;
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+  }
 
   &__nav {
     display: flex;
@@ -74,6 +80,15 @@
     border-left: 1px solid rgba(#510bba, 0.1);
     height: 80px;
     width: 70px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+
+    &:focus {
+      outline: none
+    }
 
     &__line {
       display: block;
