@@ -1,1 +1,6 @@
-# verstka_skinali
+# Skinali
+Сверстанный макет с использованием SCSS
+
+
+
+
